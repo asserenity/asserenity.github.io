@@ -1,0 +1,206 @@
+/* ===== Глобальные стили ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #08080d;
+    color: #e8e8f0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(14, 16, 22, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(45, 48, 58, 0.3);
+    margin: 20px auto;
+}
+
+/* ===== Шапка ===== */
+header {
+    border-bottom: 1px solid rgba(45, 48, 58, 0.4);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo .icon {
+    font-size: 30px;
+    background: #4e7ffc;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.logo .name {
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 6px;
+    letter-spacing: -0.5px;
+}
+
+.last-updated {
+    font-size: 14px;
+    color: #8a8da0;
+    opacity: 0.7;
+}
+
+/* ===== Основной контент ===== */
+#tos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#tos-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4e7ffc;
+    margin-top: 12px;
+    border-left: 3px solid #4e7ffc;
+    padding-left: 14px;
+}
+
+#tos-content p {
+    margin: 8px 0;
+    color: #c8c8d4;
+    font-size: 15px;
+}
+
+#tos-content ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 8px 0 12px 0;
+}
+
+#tos-content ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 6px;
+    color: #b8b8c8;
+}
+
+#tos-content ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #4e7ffc;
+    font-weight: bold;
+}
+
+#tos-content .section {
+    background: rgba(20, 22, 30, 0.4);
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid rgba(45, 48, 58, 0.2);
+}
+
+#tos-content .section h2 {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* Специальное выделение для важных предупреждений */
+#tos-content .highlight {
+    background: rgba(78, 127, 252, 0.08);
+    border-left: 3px solid #4e7ffc;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+#tos-content .highlight strong {
+    color: #4e7ffc;
+}
+
+/* ===== Футер ===== */
+footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(45, 48, 58, 0.3);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    color: #6a6d80;
+}
+
+footer a {
+    color: #4e7ffc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #7a9ffc;
+    text-decoration: underline;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 650px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    #tos-content h2 {
+        font-size: 18px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 16px;
+    }
+    .logo .icon {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+    }
+}
