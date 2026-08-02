@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arcality – Terms of Service</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <!-- Шрифт Inter от Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <span class="icon">⚡</span>
-                <span class="name">Arcality</span>
-            </div>
-            <h1>Terms of Service</h1>
-            <p class="last-updated">Last Updated: June 13, 2026</p>
-        </header>
+    <div class="page-wrapper">
+        <div class="container">
+            <!-- Хедер -->
+            <header class="header">
+                <div class="brand">
+                    <div class="logo-icon">⚡</div>
+                    <div class="brand-text">
+                        <span class="brand-name">Arcality</span>
+                        <span class="badge">v2.0</span>
+                    </div>
+                </div>
+                <div class="header-meta">
+                    <span class="status">🔒 Private</span>
+                    <span class="divider">|</span>
+                    <span class="updated">Last updated: June 13, 2026</span>
+                </div>
+            </header>
 
-        <main id="tos-content">
-            <!-- Текст будет вставлен через JS, чтобы легче было редактировать -->
-        </main>
+            <!-- Основное содержание -->
+            <main id="tos-content">
+                <!-- Текст будет вставлен JS -->
+            </main>
 
-        <footer>
-            <p>&copy; 2026 Arcality. All rights reserved.</p>
-            <p>Contact: <a href="https://discord.gg/DvbwaXBb2R" target="_blank">Discord</a> · <a href="https://t.me/psylocibins" target="_blank">Telegram</a></p>
-        </footer>
+            <!-- Футер -->
+            <footer class="footer">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Support</a>
+                    <a href="https://discord.gg/DvbwaXBb2R" target="_blank" class="footer-link">Discord</a>
+                    <a href="https://t.me/psylocibins" target="_blank" class="footer-link">Telegram</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Arcality. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
